@@ -30,4 +30,5 @@ public class AccountAgencyId  implements Serializable
 	public void setAgency(Agency agency) {
 		this.agency = agency;
 	}	
+	
 }

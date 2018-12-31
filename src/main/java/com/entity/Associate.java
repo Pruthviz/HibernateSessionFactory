@@ -24,11 +24,11 @@ public class Associate implements Serializable
 	@EmbeddedId
 	private AccountAgencyId primaryKey = new AccountAgencyId();
 	
-	@Column(name = "IS_ADMIN", nullable = false)
-	private char isAdmin;
+	@Column(name = "IS_ADMIN")
+	private char isAdmin = 'N';
 
-	@Column(name = "IS_ACTIVE", nullable = false)
-	private char isActive;
+	@Column(name = "IS_ACTIVE")
+	private char isActive = 'Y';
 	
 	public Associate() 
 	{
@@ -79,7 +79,7 @@ public class Associate implements Serializable
 
 	@Override
 	public String toString() {
-		return "Associate [isAdmin=" + isAdmin + ", isActive=" + isActive + "]";
-	}	
+		return "Associate [primaryKey=" + primaryKey + ", isAdmin=" + isAdmin + ", isActive=" + isActive + "]";
+	}		
    
 }

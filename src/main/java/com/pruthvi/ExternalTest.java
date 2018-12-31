@@ -22,8 +22,8 @@ public class ExternalTest {
 		{					
 			session= HibernateUtil.getSessionFactory().openSession();
 												
-			Agency a2 =  (Agency) session.get(Agency.class, 3);
-			//System.out.println(a2.getAssociate().size());
+			Agency a2 =  (Agency) session.get(Agency.class, 1);
+			System.out.println(a2);
 							
 		} 
 		catch (Exception e) {

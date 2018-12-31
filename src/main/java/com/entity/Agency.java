@@ -71,4 +71,9 @@ public class Agency
 		this.account = account;
 	}
 
+	@Override
+	public String toString() {
+		return "Agency [id=" + id + ", clientRef = " + clientRef + " associates=" + associates
+				+ "]";
+	}
 }

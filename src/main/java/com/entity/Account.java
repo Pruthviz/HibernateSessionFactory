@@ -80,5 +80,12 @@ public class Account
 
 	public void setAssociates(Set<Associate> associates) {
 		this.associates = associates;
-	}			
+	}
+
+	@Override
+	public String toString() {
+		return "Account [id=" + id + ", username=" + username + ", password=" + password + ", status=" + status
+				+ ", agency=" + agency + ", associates=" + associates + "]";
+	}	
+	
 }
